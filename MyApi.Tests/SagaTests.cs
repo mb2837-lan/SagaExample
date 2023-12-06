@@ -3,6 +3,12 @@
 public class SagaTests
 {
     [Test]
+    public async Task ShouldFail()
+    {
+        Assert.Fail();
+    }
+
+    [Test]
     public async Task ShouldBeAbleToStartSaga()
     {
         // arrange
